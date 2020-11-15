@@ -28,8 +28,9 @@ export class LanguageProvider extends Component {
 // and additional props, returns the same Component with all original props
 // and injects in languageContext(any names) which is coming from
 // LanguageContext.Consumer. Take the value and passing in to Component.
-export const withLanguageContext = (Component) => (props) => (
-	<LanguageContext.Consumer>
-		{(value) => <Component languageContext={value} {...props} />}
-	</LanguageContext.Consumer>
-);
+
+// export const withLanguageContext = (Component) => (props) => (
+// 	<LanguageContext.Consumer>
+// 		{(value) => <Component languageContext={value} {...props} />}
+// 	</LanguageContext.Consumer>
+// );
